@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="Container">
+        <h2>PASSWORD GENERATOR</h2>
+
+        <div class="display-container">
+            <input readonly placeholder="Password" class="display"  id="data-passwordDisplay">
+            <button  class="copy" id="data-copy">
+                <span  class="copy1"    id="data-copymsg"></span>
+                <i class="fa fa-copy" style="font-size:25px"></i>
+            </button>
+        </div>   
+
+        <div class="input-container">
+            <div class="length-container">
+                <p>Password Length</p>
+                <p id="data-length">0</p>
+            </div>
+
+            <input type="range" min="1" max="20" class="slider"  id="data-lenghtSlider">
+
+            <div class="check">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Inculde Uppercase letter</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Inculde lowercase letter</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="Special">
+                <label for="Special">Inculde Special letter</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="num">
+                <label for="num">Inculde numbers </label>
+            </div>
+            <div class="strength-container">
+                <p>Strength</p>
+                <div id="strength-indicater"></div>
+            </div>
+            <button id="butt">Generate Password</button>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
